@@ -1,0 +1,97 @@
+body, html {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #222;
+}
+.nav {
+    width: 16.35%; /*Slightly less than 1/4th of the width*/
+    background-color: #4682B4 ;
+    align-self: center;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}​​
+
+
+
+/* Style for tab buttons */
+.tablink{
+  background-color: #4682B4;
+  color: none;
+  float: left;
+  border: none;
+  cursor: pointer;
+  padding: 14px, 16px;
+  font-size: 1.3em;
+  width: ;
+}
+
+/* Change background color of tab button on hover */
+.tablink:hover{
+  background-color: #004E93;
+}
+
+/* Set default styles for tab content */
+.tabcontent {
+  font-size: 2em;
+  color: white;
+  display: none;
+  padding: 50px;
+  text-align: center;
+  -webkit-animation: fadeEffect 2s;
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+#Home{
+  background-image: url("images/quote.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+  background-color: #004E93;
+
+}
+#About{
+  background-color: #004E93;
+  background-image: url("images/beach.png");
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+#Media{
+  background-image: url("images/flower.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #004E93;
+}
+#Social{
+  background-color: #004E93;
+}
+#Youtube{
+  background-color: #004E93;
+}
+#Free{
+  background-color: #004E93;
+}
+
+#footer{
+  color: #4682B4;
+  font-size: .99em;
+  font-style: Georgia;
+  text-decoration: overline;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
+}

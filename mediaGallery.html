@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Darrell Hayden">
+    <meta name="description" content="This webpage contains media content for Phoebe Cook">
+    <title>Media Gallery</title>
+    <link rel="stylesheet" type="text/css" href="styling.css">
+    <style type = "text/css">
+      body{
+        background: #222;
+        margin:0;
+      }
+      .thumbnails img{
+        height: 80px;
+        border: 4px solid #555;
+        padding: 1px;
+        margin: 0 10px 10px 0;
+      }
+      .thumbnails img:hover{
+        border: 4px solid #00ccff;
+        cursor: pointer;
+      }
+      .preview img{
+        border: 4px solid #444;
+        padding: 1px;
+        width: 800px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="Home" class="tabcontent">
+      <h3>Hello Alien,</h3>
+      <p>There&#39s no place like home.</p>
+    </div>
+    <div id="About" class="tabcontent">
+      <h3>About Pheebs</h3>
+      <p>I'm pretty cool.</p>
+    </div>
+    <div id="Media" class="tabcontent">
+      <h3>Gallery</h3>
+      <p>A peep-hole into my life.</p>
+    </div>
+    <div id="Social" class="tabcontent">
+      <h3>Follow Me</h3>
+      <p>You got Insta? Snap? Let's be friends :)</p>
+    </div>
+    <div id="Youtube" class="tabcontent">
+      <h3>YouTube</h3>
+      <p>Follow my YouTube Channel!</p>
+      <p style="font-size: .5em;">(please)</p>
+    </div>
+    <div id="Free" class="tabcontent">
+      <h3>Wildcard</h3>
+      <p>I am not responsible for the content you may view here. . . </p>
+    </div>
+
+    <div class="nav"><a href="main.html"><button class="tablink" onclick="openTab('Home',this,'#FFD700')">Home</button></a></div>
+    <div class="nav"><button class="tablink" onclick="openTab('About',this,'#FFD700')">About Pheebs</button></div>
+    <div class="nav"><button class="tablink" onclick="openTab('Media',this,'#FFD700')"
+    id="defaultOpen">Media Gallery</button></div>
+    <div class="nav"><button class="tablink" onclick="openTab('Social',this,'#FFD700')">Follow Me</button></div>
+    <div class="nav"><button class="tablink" onclick="openTab('Youtube',this,'#FFD700')">YouTube</button></div>
+    <div class="nav"><button class="tablink" onclick="openTab('Free',this,'#FFD700s')">Wildcard</button></div>
+
+    <div class="gallery" align="center">
+      <div class="thumbnails">
+        <img onmouseover="getElementById('preview').src=getElementById('brother').src" id="brother" src="images/brother.png" alt="" />
+        <img onmouseover="preview.src=friend.src" name="friend" src="images/friend.png" alt="" />
+        <img onmouseover="preview.src=candid.src" name="candid" src="images/candid.png" alt="" />
+      </div>
+      <div class="preview" align="center">
+        <img id="preview" src="images/brother.png" alt="" />
+      </div>
+    </div>
+
+    <div id="footer">Last Updated: 09/17 |
+       Hello Alien x Phoebe Cook | Booleanaire Club
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
